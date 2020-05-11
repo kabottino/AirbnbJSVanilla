@@ -2,3 +2,116 @@
     margin: 0;
     padding: 0;
 }
+
+.menu{
+    background-color: #ffffff;
+}
+#badgeRosa{
+    background-color: #FF385C;
+}
+.submenu ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+   
+  .submenu li:not(:last-child) {
+    margin-right: 20px;
+  }
+   
+  .submenu a {
+    display: block;
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    padding: 7px 15px;
+  }
+   
+  .target {
+    position: absolute;
+    border-bottom: 4px solid transparent;
+    z-index: -1;
+    transform: translateX(-60px);
+  }
+   
+  .submenu a,
+  .target {
+    transition: all .35s ease-in-out;
+  }
+  #botaopesquisar{
+      background-color:#FF385C ;
+      height: 40px;
+  }
+  .submenutext{
+      font-size: 15px;
+      text-align:left;
+  }
+  .subtext{
+      font-size: 12px;
+      text-align:left;
+  }
+.submenudois{
+    border-color: #F8F8F8;
+    border-width: 1px;
+    border-style: solid;
+}
+h1{
+    background:linear-gradient(to right, #92174D 9.38%, #E41D5C 88.54%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: inherit;
+}
+.cardum{
+
+    margin: 0;
+    padding: 0;
+}
+.mural{
+    background-color: black;
+}
+#blackcard2{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #222222;
+    height: 20%;
+    width: 20%;
+}
+#blackcard{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color:#222222;
+    width: 60%;
+}
+#blackcard4{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color:#222222;
+    height: 20%;
+    width: 30%;
+}
+h4{
+    font-size: 12px;
+}
+.final{
+    background-color: #F7F7F7;
+}
+.footer{
+    background-color: white;
+}
+.finalh1{
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    font-size: 22px;
+    line-height: 26px ;
+    color: #222222 ;
+    font-weight: 600;
+}
+a{
+    text-decoration: none;
+    font-style: normal;
+}
+h2{
+    font-size: 18px;
+}

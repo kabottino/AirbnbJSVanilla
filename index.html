@@ -1,16 +1,359 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e2fb5cba30.js" crossorigin="anonymous"></script>
     <title>Desafio Airbnb</title>
 </head>
 <body>
     
+<div class="container">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light menu">
+            <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="logo da empresa" height="60px"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#"> </a>
+                        <button type="button" class="dropdown"><i class="fas fa-globe"></i> <i class="fas fa-chevron-down"></i></button>
+                        <div class="dropdown-menu">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                        </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Hospede em sua acomodação</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Hospede uma experiência</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Ajuda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Entrar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"><button type="button" class="btn">Cadastrar-se</button></a>
+                  </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
 
+    <div class="submenu">
+        <ul class="nav justify-content-start active">
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Lugares para Ficar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Estadias Longas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Experiências</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">Experiências Online <span class="badge badge-secondary" id="badgeRosa">NOVO</span></a>
+            </li>
+          </ul>
+          <span class="target"></span>
+    </div>
+    <div class="label mt-3 w-85">
+        <ul class="nav md-pills nav-justified mx-0">
+            <li class="nav-item submenudois">
+                <button class="btn">
+              <div class="submenutext">
+                Localização
+              </div>
+              <div class="subtext">
+                Para onde você vai?
+              </div>
+            </button>
+            </li>
+            <li class="nav-item submenudois">
+                <button class="btn">
+              <div class="submenutext">
+                check-in/checkout
+              </div>
+              <div class="subtext">
+                insira das datas
+              </div>
+            </button>
+            </li>
+            <li class="nav-item submenudois">
+                <button class="btn btn-lg">
+              <div class="submenutext">
+                Hóspedes
+              </div>
+              <div class="subtext">
+                Insira o número de hóspedes
+              </div>
+            </button>
+            </li>
+            <button type="submit" class="btn text-light ml-4" id="botaopesquisar"><i class="fas fa-search"></i> Buscar</button>
+          </ul>
+    </div>
+    <div class="mt-5">
+        <h1 class="w-50">Podemos estar afastados, mas vamos superar isso juntos.</h1>
+    </div>
+    <div class="card-deck mt-4 mb-4">
+        <div class="card rounded-lg">
+            <div class="cardum rounded-lg" >
+                <img src="./img/tablet.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title submenutext">Experiências Online</h5>
+                <p class="card-text subtext">Atividades únicas que podemos fazer juntos oferecidas por anfitriões de todo mundo.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card rounded-lg">
+            <div class="cardum rounded-lg">
+                <img src="./img/homemnacozinha.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title submenutext">Estádias Prolongadas</h5>
+                <p class="card-text subtext">Sinta-se em casa no Airbnb com estádias de 1mês ou mais.</p>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="cardum rounded-lg ">
+                <img src="./img/mulhernegra.PNG" class="card-img-top" alt="...">
+                <div class="card-body">
+                <h5 class="card-title submenutext">Informações Atualizadas</h5>
+                <p class="card-text subtext">Saiba mais sobre as ações que estamos tomando em relação ao COVID-19.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid mural">
+    <div class="">
+        <h2 class="text-light bold">Apresentamos as experiências online</h2>
+    </div>
+    <div>
+        <h4 class="text-light">Agora você pode conhecer pessoas do mundo inteiro enquanto experimenta algo novo. Participe de sessões de vídeo interativas ao vivo oferecidas por anfitriões especialistas — tudo isso sem sair de casa.</h4>
+    </div>
+    <div class="d-flex flex-lg-wrap">
+        <div class="card p-2 flex-grow-3 bd-highlight bd-highlight mr-2 rounded-lg" id="blackcard" >
+            <img src="./img/pc.PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-light">Prepare uma receita de sangria secreta com Pedro, de Lisboa</p>
+              
+            </div>
+          </div>
+          <div class="card p-2 bd-highlight mr-2 rounded-lg" id="blackcard2">
+            <a href="http://">
+            <img src="./img/computador.PNG" class="card-img-top" alt="..." style="width: 100%;">
+            <div class="card-body">
+              <p class="card-text text-light">Alongue-se. Respire. Relaxe. Aula de ioga com amigos.</p>
+            </div>
+           </a>
+          </div>
+          <div class="card p-2 bd-highlight ml-2 rounded-lg" id="blackcard2">
+            <img src="./img/pinguin (4).PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-light">Medite ao som da música com Janice, de Amsterdã</p>
+            </div>
+          </div>
+          <div class="card p-2 bd-highlight ml-2 rounded-lg" id="blackcard4">
+            <img src="./img/pinguin (1).PNG" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text text-light">Desenhe com Jon e ajude os pinguins africanos</p>
+            </div>
+          </div>
+
+    </div>
+
+</div>
+<div class="container">
+    <div class="final">
+        <h1 class="finalh1">Fique por dentro</h1>
+        <div class="row text-left">
+            <section class="col-md-3">
+                <h2>Para hóspedes</h2>
+                <a href="https://www.airbnb.com.br/covid">
+                <span>
+                    <b>Atualizações sobre viagens</b>
+                </span>
+                <span>O que você deve saber</span>
+            </a>
+            <a href="https://www.airbnb.com.br/help/article/2701/extenuating-circumstances-policy-and-the-coronavirus-covid19">
+            <span>
+                <b>Opções de cancelamento</b>
+            </span>
+            <span>Saiba o que está coberto</span>
+            </a>
+            <a href="https://www.airbnb.com.br/help">
+            <span>
+                <b>Central de Ajuda</b>
+            </span>
+            <span>Ajuda</span>
+            </a>
+            </section>
+            <section class="col-md-3">
+                <h2>Para anfitriões</h2>
+                <a href="https://www.airbnb.com.br/host-message">                
+                    <span><b>Mensagem de Brian Chesky</b></span>
+                    <span>Mensagem do nosso CEO</span>
+                    </a> 
+                <a href="https://www.airbnb.com.br/covid">
+                    <span><b>Recursos para hospedagem</b></span>
+                    <span>Como mitigar os efeitos da COVID-19</span>
+                </a> 
+                <a href="http://airbnb.com.br/resources/hosting-homes/t/coronavirus-updates-34">
+                    <span><b>Ofereça acomodações na linha de frente</b></span>
+                    <span>Saiba como ajudar</span>
+                    </a> 
+            </section>
+            <section class="col-md-3">
+                <h2>Para pessoas combatendo a COVID-19</h2>
+                <a href="http://airbnb.com.br/resources/hosting-homes/t/coronavirus-updates-34">
+                <span><b>Acomodações na linha de frente</b></span>
+                <span>Saiba mais sobre o programa</span>
+                </a> 
+                <a href="http://airbnb.com.br/resources/hosting-homes/t/coronavirus-updates-34">
+                    <span><b>Cadastre-se</b></span>
+                    <span>Consulte as opções de acomodação</span>
+                    </a> 
+                    <a href="http://airbnb.com.br/resources/hosting-homes/t/coronavirus-updates-34">
+                <span><b>Faça uma doação</b></span>
+                <span>Apoie organizações sem fins lucrativos</span>
+                </a>
+            </section>
+
+        <section class="col-md-3">
+            <h2>Mais</h2>
+                <a href="https://news.airbnb.com/br">
+                <span><b>Sala de Imprensa do Airbnb</b></span>
+                <span>Últimas informações</span>
+                </a> 
+                <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019">
+                    <span><b>Organização Mundial da Saúde</b></span>
+                    <span>Recomendações e atualizações</span>
+                    </a>  
+        </section>
+
+    </div>
+    <div class="footer">
+        <div class=" mt-3 pb-3 text-center text-md-left">
+            <div class="row">
+                <div class="col-md-3 col-lg-3 mt-3" >
+                    <h6 class="text-uppercase mb-2 font-weight-bold text-dark"> Sobre</h6>
+                    <p> 
+                        <a href="" class="text-decoration-none text-dark">Diversidade e pertencimento</a>
+                    </p>
+                    <p> 
+                        <a href="" class="text-decoration-none text-dark text-left">Acessibilidade</a>
+                    </p>
+                    <p> 
+                        <a href="" class="text-decoration-none text-dark">Confiança e segurança</a>
+                    </p>
+                    <p> 
+                        <a href="" class="text-decoration-none text-dark">Airbnb Citizen</a>
+                    </p>
+                    <p> 
+                        <a href="#">Newsroom</a>
+                    </p>
+                </div>
+                    <div class="col-md-3 col-lg-3 mt-3" >
+                        <h6 class="text-uppercase mb-2 font-weight-bold text-dark"> Comunidade</h6>
+
+                        <p> 
+                            <a href="" class="text-decoration-none text-dark">Airbnb Magazine</a>
+                        </p>
+                        <p> 
+                            <a href="" class="text-decoration-none text-dark text-left">Airbnb for Work</a>
+                        </p>
+                        <p> 
+                            <a href="" class="text-decoration-none text-dark">Convide amigos</a>
+                        </p>
+                        <p> 
+                            <a href="" class="text-decoration-none text-dark">Carreiras</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 mt-3" >
+                        <h6 class="text-uppercase mb-2 font-weight-bold text-dark"> ANFITRIÃO</h6>
+
+                        <p> 
+                            <a href="" class="text-decoration-none text-dark">Hospede em sua acomodaçãoo</a>
+                        </p>
+                        <p> 
+                            <a href="" class="text-decoration-none text-dark text-left">Ofereça uma experiência</a>
+                        </p>
+                        <p> 
+                            <a href="" class="text-decoration-none text-dark">Hospedagem responsável</a>
+                        </p>
+                        <p> 
+                            <a href="" class="text-decoration-none text-dark">Open Homes</a>
+                        </p>
+                        <p> 
+                            <a href="#">Olimpíadas</a>
+                        </p>
+                        <p> 
+                            <a href="#">Central de Recursos</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-lg-3 mt-3" >
+                        <h6 class="text-uppercase mb-2 font-weight-bold text-dark"> ATENDIMENTO</h6>
+                        <p> 
+                            <a href="" class="text-decoration-none text-dark">Central de Ajuda</a>
+                        </p>
+                        <p> 
+                            <a href="" class="text-decoration-none text-dark text-left">Atendimento ao Bairro</a>
+                        </p>
+                    </div>
+        </div>
+            <hr>
+            <div class="row d-flex align-items-center">
+                <div class="col-md-7 col-lg-8">
+          
+                  <!--Copyright-->
+                  <p class="text-center text-md-left text-dark"><small>©  2020 Airbnb, Inc. All rights reserved.
+                    <a href="" class="text-decoration-none text-dark"> </a>
+                </small></p>
+          
+                </div>
+                <div class="col-md-5 col-lg-4 ml-lg-0">
+    
+                    <!-- Social buttons -->
+                    <div class="text-center text-md-right">
+                      <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                          <a class="btn-floating btn-sm mx-1" href="#">
+                            <img src="{{ asset('img/facebook (1).png') }}" alt="" srcset="">
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="btn-floating btn-sm mx-1" href="#">
+                            <img src="{{ asset('img/instagram (1).png') }}" alt="" srcset="">
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="btn-floating btn-sm mx-1" href="#">
+                            <img src="{{ asset('img/twitter.png') }}" alt="" srcset="">
+                          </a>
+                        </li>
+                        <li class="list-inline-item">
+                          <a class="btn-floating btn-sm mx-1" href="#">
+                            <img src="{{ asset('img/whatsapp (3).png') }}" alt="" srcset="">
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+            
+                </div>
+                  <!-- Grid column -->
+            
+        </div>
+    </div>
+</div>
 
 
 
